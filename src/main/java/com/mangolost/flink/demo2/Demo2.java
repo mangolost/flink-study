@@ -1,20 +1,17 @@
 package com.mangolost.flink.demo2;
 
-import com.mangolost.flink.WordWithCount;
-import org.apache.commons.lang3.StringUtils;
+import com.mangolost.flink.dto.WordWithCount;
 import org.apache.flink.api.common.functions.FlatMapFunction;
-import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.util.Collector;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
+/**
+ *
+ */
 public class Demo2 {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(Demo2.class);
 
     private static final int PORT = 9000;
 

@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ *
+ */
 public class CommonConfig {
 
     public static Properties prop;

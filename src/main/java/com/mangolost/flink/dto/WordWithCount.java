@@ -1,7 +1,10 @@
-package com.mangolost.flink;
+package com.mangolost.flink.dto;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ *
+ */
 public class WordWithCount {
 
     private String word;

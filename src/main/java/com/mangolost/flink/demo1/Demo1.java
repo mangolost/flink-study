@@ -1,6 +1,6 @@
 package com.mangolost.flink.demo1;
 
-import com.mangolost.flink.WordWithCount;
+import com.mangolost.flink.dto.WordWithCount;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.ReduceFunction;
@@ -12,6 +12,9 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
+/**
+ *
+ */
 public class Demo1 {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Demo1.class);
