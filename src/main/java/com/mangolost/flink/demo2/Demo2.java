@@ -30,7 +30,7 @@ public class Demo2 {
             }
         })//打平操作，把每行的单词转为<word,count>类型的数据
                 //针对相同的word数据进行分组
-                .keyBy("word")
+                .keyBy(WordWithCount::getWord)
                 //指定计算数据的窗口大小和滑动窗口大小
                 .timeWindow(Time.seconds(2),Time.seconds(1))
                 .sum("count");

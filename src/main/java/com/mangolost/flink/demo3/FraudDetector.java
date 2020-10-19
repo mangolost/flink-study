@@ -10,7 +10,7 @@ import org.apache.flink.walkthrough.common.entity.Alert;
 import org.apache.flink.walkthrough.common.entity.Transaction;
 
 /**
- *
+ *  欺诈检查类
  */
 public class FraudDetector extends KeyedProcessFunction<Long, Transaction, Alert> {
 
@@ -38,6 +38,13 @@ public class FraudDetector extends KeyedProcessFunction<Long, Transaction, Alert
         timerState = getRuntimeContext().getState(timerDescriptor);
     }
 
+    /**
+     * 对流的每个元素进行处理
+     * @param transaction
+     * @param context
+     * @param collector
+     * @throws Exception
+     */
     @Override
     public void processElement(Transaction transaction, Context context, Collector<Alert> collector) throws Exception {
 
